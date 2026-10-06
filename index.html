@@ -10,9 +10,9 @@
   <meta property="og:title" content="Rajat Karnani | Actuarial Science & AI Developer" />
   <meta property="og:description" content="Portfolio of Rajat Karnani — Actuarial Science student, AI-assisted developer, and digital creator." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/rajatkarnani2-commits/rajatkarnani/main/images/profile.jpg" />
-  <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/rajatkarnani2-commits/rajatkarnani/main/images/profile.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/rajatkarnani2-commits/rajatkarnani/main/images/profile.png" />
+  <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/rajatkarnani2-commits/rajatkarnani/main/images/profile.png" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Rajat Karnani profile picture" />
@@ -20,11 +20,108 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rajat Karnani | Actuarial Science & AI Developer" />
   <meta name="twitter:description" content="Portfolio of Rajat Karnani — Actuarial Science student, AI-assisted developer, and digital creator." />
-  <meta property="twitter:image" content="https://raw.githubusercontent.com/rajatkarnani2-commits/rajatkarnani/main/images/profile.jpg" />
-  <meta property="twitter:image:width" content="1200" />
-  <meta property="twitter:image:height" content="630" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/rajatkarnani2-commits/rajatkarnani/main/images/profile.png" />
+  <meta name="twitter:image:width" content="1200" />
+  <meta name="twitter:image:height" content="630" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0a0a0a;
+      --bg2:#111111;
+      --bg3:#181818;
+      --border:#222222;
+      --text:#f0f0f0;
+      --muted:#888888;
+      --accent:#2563EB;
+      --accent2:#3b82f6;
+      --white:#ffffff;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 5%;background:rgba(10,10,10,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;min-height:64px}
+    .nav-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:-.5px}
+    .nav-logo span{color:var(--accent)}
+    .nav-links{display:flex;gap:32px;list-style:none}
+    .nav-links a{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+    .nav-links a:hover{color:var(--white)}
+    .nav-cta{background:var(--accent);color:#fff;padding:8px 20px;border-radius:6px;font-size:13px;font-weight:500;letter-spacing:.04em;transition:background .2s}
+    .nav-cta:hover{background:var(--accent2)}
+
+    /* HERO */
+    #home{min-height:100vh;padding-top:64px;display:flex;align-items:center}
+    .hero-inner{width:90%;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:center;padding:80px 0}
+    .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+    .hero-name{font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,6vw,80px);font-weight:700;line-height:1.0;letter-spacing:-2px;margin-bottom:24px}
+    .hero-name .line2{color:var(--muted);font-weight:400}
+    .hero-tagline{font-size:17px;color:var(--muted);max-width:460px;line-height:1.7;margin-bottom:36px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+    .hero-tag{background:var(--bg3);border:1px solid var(--border);padding:6px 14px;border-radius:20px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+    .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+    .btn-primary{background:var(--accent);color:#fff;padding:13px 28px;border-radius:7px;font-size:14px;font-weight:500;transition:.2s;border:none;cursor:pointer;display:inline-block}
+    .btn-primary:hover{background:var(--accent2);transform:translateY(-1px)}
+    .btn-secondary{border:1px solid var(--border);color:var(--text);padding:13px 28px;border-radius:7px;font-size:14px;font-weight:500;transition:.2s;display:inline-block}
+    .btn-secondary:hover{border-color:var(--muted);background:var(--bg3)}
+    .hero-stats{display:flex;gap:32px;margin-top:48px;padding-top:40px;border-top:1px solid var(--border)}
+    .hero-stat .num{font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:var(--white)}
+    .hero-stat .label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+    .hero-photo-wrap{position:relative}
+    .hero-photo{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;border-radius:16px;filter:grayscale(10%)}
+    .hero-photo-glow{position:absolute;inset:-2px;border-radius:18px;background:linear-gradient(135deg,var(--accent) 0%,transparent 60%);z-index:-1;opacity:.4}
+  </style>
 </head>
 <body>
-  <h1>Rajat Karnani</h1>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">RK<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#posts">Posts</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Let's Connect</a>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Based in Kolkata, India</p>
+      <h1 class="hero-name">Rajat<br/><span class="line2">Karnani</span></h1>
+      <p class="hero-tagline">Actuarial Science student, AI-assisted developer, and digital creator — building at the intersection of numbers, code, and creativity.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">Actuarial Science</span>
+        <span class="hero-tag">AI Development</span>
+        <span class="hero-tag">Digital Creator</span>
+        <span class="hero-tag">IAI Student Member</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">Explore Projects</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">34+</div><div class="label">Certifications</div></div>
+        <div class="hero-stat"><div class="num">13</div><div class="label">Projects</div></div>
+        <div class="hero-stat"><div class="num">4</div><div class="label">Domains</div></div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-glow"></div>
+      <img class="hero-photo" src="https://raw.githubusercontent.com/rajatkarnani2-commits/rajatkarnani/main/images/profile.png" alt="Rajat Karnani profile picture" />
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
